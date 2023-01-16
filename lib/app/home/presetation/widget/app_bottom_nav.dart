@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class AppBottomNav extends StatefulWidget {
   Function(int) onTap;
-  int currentIndex = 0;
+  late int currentIndex;
   AppBottomNav({
     Key? key,
+    required this.currentIndex,
     required this.onTap,
   }) : super(key: key);
 
@@ -23,9 +24,7 @@ class _AppBottomNavState extends State<AppBottomNav> {
       unselectedItemColor: Colors.grey,
       showUnselectedLabels: false,
       showSelectedLabels: false,
-      unselectedIconTheme: const IconThemeData(size: 28),
-      selectedIconTheme: const IconThemeData(size: 28),
-      iconSize: 28,
+      iconSize: 32,
       type: BottomNavigationBarType.fixed,
       onTap: (value) {
         setState(() {

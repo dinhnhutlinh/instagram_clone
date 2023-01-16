@@ -32,9 +32,7 @@ class _StoryPageState extends State<StoryPage> {
                 ),
               ],
               onVerticalSwipeComplete: (p0) {
-                if (p0! == Direction.down) {
-                  print('up');
-                } else {
+                if (p0! == Direction.up) {
                   Navigator.of(context).pop();
                 }
               },
