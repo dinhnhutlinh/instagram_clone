@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_clone/app/story/presetation/widget/add_story.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -87,6 +88,27 @@ class ProfilePage extends StatelessWidget {
               ],
             ),
           ),
+          const Divider(),
+          YourStory(),
+          const Divider()
+        ],
+      ),
+    );
+  }
+}
+
+class YourStory extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 100,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: const [
+          SizedBox(
+            width: 16,
+          ),
+          AddStory(),
         ],
       ),
     );

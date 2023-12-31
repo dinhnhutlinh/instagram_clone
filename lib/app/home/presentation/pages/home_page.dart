@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone/app/find/presetation/pages/find_page.dart';
-import 'package:instagram_clone/app/home/presetation/pages/news_feed_page.dart';
-import 'package:instagram_clone/app/home/presetation/widget/app_bottom_nav.dart';
+import 'package:instagram_clone/app/home/presentation/pages/news_feed_page.dart';
+import 'package:instagram_clone/app/home/presentation/widget/app_bottom_nav.dart';
+import 'package:instagram_clone/app/notification/presentation/pages/notfi_pages.dart';
 import 'package:instagram_clone/app/profile/presetation/pages/profile_page.dart';
 import 'package:instagram_clone/app/reels/presentaion/pages/reels_page.dart';
 
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage> {
           const NewFeelPage(),
           const FindPage(),
           ReelsPage(),
-          const Center(child: Text('Shop')),
+          const NotificationPage(),
           const ProfilePage(),
         ],
       ),

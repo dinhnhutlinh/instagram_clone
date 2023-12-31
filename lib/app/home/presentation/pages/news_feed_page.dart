@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/app/home/presetation/widget/post_timeline.dart';
-import 'package:instagram_clone/app/home/presetation/widget/story_timeline.dart';
+import 'package:instagram_clone/app/home/presentation/widget/post_timeline.dart';
+import 'package:instagram_clone/app/home/presentation/widget/story_timeline.dart';
 
 class NewFeelPage extends StatelessWidget {
   const NewFeelPage({super.key});

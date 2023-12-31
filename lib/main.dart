@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone/app/home/presetation/pages/home_page.dart';
+import 'package:instagram_clone/app/home/presentation/pages/home_page.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         iconTheme: const IconThemeData(color: Colors.white, size: 32),
       ),
       themeMode: ThemeMode.dark,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

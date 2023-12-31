@@ -13,7 +13,7 @@ class FindPage extends StatelessWidget {
               children: [
                 Expanded(
                   child: Padding(
-                    padding: const EdgeInsets.all(16),
+                    padding: const EdgeInsets.all(8),
                     child: TextField(
                       decoration: InputDecoration(
                         hintText: 'Search',
